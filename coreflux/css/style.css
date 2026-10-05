@@ -165,6 +165,7 @@ section.block h2::before {
 .site-footer { border-top: 1px solid var(--border); padding: 24px 0 32px; font-size: 0.8rem; color: var(--text-sub); }
 .site-footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 .site-footer a { color: var(--text-sub); text-decoration: none; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 .site-footer a:hover { color: var(--text); }
 
 /* tablet */
