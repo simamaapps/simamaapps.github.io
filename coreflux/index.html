@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Flux - Simama Apps</title>
+<meta name="description" content="Core Flux, a minimal color-matching puzzle game for Android. Choose your language.">
+<link rel="alternate" hreflang="ja" href="https://simamaapps.github.io/coreflux/jp/">
+<link rel="alternate" hreflang="en" href="https://simamaapps.github.io/coreflux/en/">
+<link rel="alternate" hreflang="x-default" href="https://simamaapps.github.io/coreflux/">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function () {
+    var langs = navigator.languages || [navigator.language || ""];
+    var ja = String(langs[0] || "").toLowerCase().indexOf("ja") === 0;
+    location.replace(ja ? "jp/" : "en/");
+  })();
+</script>
+</head>
+<body>
+<main class="wrap" style="padding: 80px 20px; text-align: center;">
+  <img src="img/icon.png" alt="Core Flux" width="96" height="96" style="margin: 0 auto 24px; border-radius: 20px;">
+  <p><a href="jp/" hreflang="ja">日本語</a> ／ <a href="en/" hreflang="en">English</a></p>
+</main>
+</body>
+</html>
