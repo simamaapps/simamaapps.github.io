@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Salvo - Simama Apps</title>
+<meta name="description" content="Core Salvo, a 3D diorama brick breaker for Android. Choose your language.">
+<link rel="alternate" hreflang="ja" href="https://simamaapps.github.io/coresalvo/jp/">
+<link rel="alternate" hreflang="en" href="https://simamaapps.github.io/coresalvo/en/">
+<link rel="alternate" hreflang="x-default" href="https://simamaapps.github.io/coresalvo/">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function () {
+    var langs = navigator.languages || [navigator.language || ""];
+    var ja = String(langs[0] || "").toLowerCase().indexOf("ja") === 0;
+    location.replace(ja ? "jp/" : "en/");
+  })();
+</script>
+</head>
+<body>
+<main class="wrap" style="padding: 80px 20px; text-align: center;">
+  <img src="img/icon.png" alt="Core Salvo" width="96" height="96" style="margin: 0 auto 24px; border-radius: 20px;">
+  <p><a href="jp/" hreflang="ja">日本語</a> ／ <a href="en/" hreflang="en">English</a></p>
+</main>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "02e5aab1bbf64302afbf8366664e365f"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

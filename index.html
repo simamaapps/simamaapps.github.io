@@ -25,12 +25,64 @@
   .lang-nav { font-size: 0.95rem; }
   hr { margin: 3em 0; border: none; border-top: 1px solid #ccc; }
   a { color: #1a5fb4; }
+  /* アプリの紹介（2026-11-17、アプリが2つになったので） */
+  .site-title { font-size: 1.1rem; font-weight: 700; margin: 0 0 16px; }
+  .apps-head { font-size: 1.15rem; margin: 0 0 12px; border: none; padding: 0; }
+  .apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-bottom: 2em; }
+  .app-card { border: 1px solid #ddd; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+  .app-top { display: flex; align-items: center; gap: 14px; }
+  .app-top img { width: 64px; height: 64px; border-radius: 14px; flex: none; }
+  .app-name { font-size: 1.1rem; font-weight: 700; margin: 0; line-height: 1.3; }
+  .app-kind { color: #666; font-size: 0.85rem; margin: 0; line-height: 1.4; }
+  .app-desc { margin: 0; font-size: 0.92rem; line-height: 1.6; }
+  .app-desc[lang="en"] { color: #555; }
+  .app-links { display: flex; gap: 8px; margin-top: auto; padding-top: 4px; }
+  .app-links a { flex: 1; text-align: center; text-decoration: none; border: 1px solid #1a5fb4; border-radius: 999px; padding: 6px 10px; font-size: 0.9rem;
+    transition: background-color 0.25s ease, color 0.25s ease; }
+  .app-links a:hover, .app-links a:focus-visible { background: #1a5fb4; color: #fff; }
+  @media (prefers-reduced-motion: reduce) { .app-links a { transition: none; } }
+  @media (max-width: 560px) { .apps { grid-template-columns: minmax(0, 1fr); } }
 </style>
 </head>
 <body>
 
-<p class="lang-nav"><a href="#ja">日本語</a> ／ <a href="#en">English</a></p>
-<p class="lang-nav">アプリ / Apps: <a href="coreflux/jp/">Core Flux（日本語）</a> ／ <a href="coreflux/en/">Core Flux (English)</a></p>
+<p class="site-title">Simama Apps</p>
+
+<h2 class="apps-head">アプリ / Apps</h2>
+<div class="apps">
+  <div class="app-card">
+    <div class="app-top">
+      <img src="coreflux/img/icon.png" alt="" width="64" height="64">
+      <div>
+        <p class="app-name">Core Flux</p>
+        <p class="app-kind">パズル / Puzzle ・ Android</p>
+      </div>
+    </div>
+    <p class="app-desc" lang="ja">同じ色をつなげて消す、自分のペースで考える脳トレパズル。</p>
+    <p class="app-desc" lang="en">Clear connected same-color blocks in this calm brain-teaser puzzle.</p>
+    <div class="app-links">
+      <a href="coreflux/jp/" hreflang="ja">日本語</a>
+      <a href="coreflux/en/" hreflang="en">English</a>
+    </div>
+  </div>
+  <div class="app-card">
+    <div class="app-top">
+      <img src="coresalvo/img/icon.png" alt="" width="64" height="64">
+      <div>
+        <p class="app-name">Core Salvo</p>
+        <p class="app-kind">箱庭ブロック崩し / 3D Brick Breaker ・ Android</p>
+      </div>
+    </div>
+    <p class="app-desc" lang="ja">コアから球を撃って、手のひらサイズの3Dの箱庭を崩す。</p>
+    <p class="app-desc" lang="en">Fire from the core and break apart tiny 3D dioramas.</p>
+    <div class="app-links">
+      <a href="coresalvo/jp/" hreflang="ja">日本語</a>
+      <a href="coresalvo/en/" hreflang="en">English</a>
+    </div>
+  </div>
+</div>
+
+<p class="lang-nav">プライバシーポリシー / Privacy Policy: <a href="#ja">日本語</a> ／ <a href="#en">English</a></p>
 
 <section id="ja" lang="ja">
 <h1>プライバシーポリシー</h1>
